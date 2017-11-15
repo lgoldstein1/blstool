@@ -44,7 +44,6 @@ $query = array(
 );
 $pd = json_encode($query);
 $contentType = 'Content-Type: application/json';
-$contentLength = 'Content-Length: ' . strlen($pd);
 $result = file_get_contents(
     $url, null, stream_context_create(
         array(
@@ -58,7 +57,6 @@ $result = file_get_contents(
 );
 $newresulta = json_decode($result, true);
 $testresult = ($newresulta ['Results'] ['series']);
-$newresulto = json_decode($result);
 foreach($testresult as $value) {
     $currentSeries = $value['seriesID'];
     $currentside = 'placeholder';
@@ -72,8 +70,6 @@ foreach($testresult as $value) {
         $counter = 0;
         foreach ($list as $item) {
             if (gettype($item) == 'string' and $counter != 1) {
-                //echo($item);
-                //echo('<br>');
                 switch ($counter) {
                     case 0:
                         if ($item != $currentside) {

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<link type="text/css">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../AdvHome.js"></script>
+    <title>Advanced Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../AdvHome.css">
+</head>
+<body>
+
+<p id="spacer"></p>
+<div id="VBar">Variables
+    <a href="AdvHome.html" class="btn btn-primary">
+        Analyze!
+    </a></div>
+<h1 class = "pagename">Advanced Search</h1>
+<div class="container">
+    <h4 class="header">Economic Data</h4>
+    <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+            Consumer Prices
+            <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+            <li><a href="#" onclick=AddButtonText(this.innerHTML)>
+                Consumer Price Index (Urban Consumers)</a></li>
+            <li><a href="#" onclick=AddButtonText(this.innerHTML)>
+                Consumer Price Index (Wage Earners)</a></li>
+            <li><a href="#" onclick=AddButtonText(this.innerHTML)>
+                Chained Consumer Price Index</a></li>
+            <li><a href="#" onclick=AddButtonText(this.innerHTML)>
+                Find Individual Goods Prices</a></li>
+        </ul></div>
+
+    <div class="dropdown"><button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+        Producer Prices
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+            <li><a href="#" onclick=AddButtonText(this.innerHTML)>
+                Producer Prices</a></li>
+            <li><a href="#" onclick=AddButtonText(this.innerHTML)>
+                Commodity Prices</a></li>
+            <li><a href="#" onclick=AddButtonText(this.innerHTML)>
+                International Prices</a></li>
+        </ul></div>
+
+    <div class="dropdown"><button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+        Employment and Unemployment
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+            <li><a href="#" onclick=AddButtonText(this.innerHTML)>
+                National Employment</a></li>
+            <li><a href="#" onclick=AddButtonText(this.innerHTML)>
+                State and Metro Employment</a></li>
+            <li><a href="#" onclick=AddButtonText(this.innerHTML)>
+                Job Openings and Turnover</li>
+            <li><a href="#" onclick=AddButtonText(this.innerHTML)>
+                Local Employment</li>
+            <li><a href="#" onclick=AddButtonText(this.innerHTML)>
+                Employment Changes</li>
+            <li><a href="#" onclick=AddButtonText(this.innerHTML)>
+                Time Use</li>
+            <li><a href="#" onclick=AddButtonText(this.innerHTML)>
+                Marital and Family Labor Statistics</li>
+            <li><a href="#" onclick=AddButtonText(this.innerHTML)>
+                Employment Projections</li>
+            <li><a href="#" onclick=AddButtonText(this.innerHTML)>
+                Labor Force Unemployment</a></li>
+            <li><a href="#" onclick=AddButtonText(this.innerHTML)>
+                Local Unemployment Statistics</a></li>
+        </ul></div>
+
+    <div class="dropdown"><button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+        Pay and Benefits
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+            <li><a href="#" onclick=AddButtonText(this.innerHTML)>
+                Employment Costs</a></li>
+            <li><a href="#" onclick=AddButtonText(this.innerHTML)>
+                Employer Cost for Employee Compensation</a></li>
+            <li><a href="#" onclick=AddButtonText(this.innerHTML)>
+                Employee Benefits</a></li>
+            <li><a href="#" onclick=AddButtonText(this.innerHTML)>
+                Work Stoppages</li>
+            <li><a href="#" onclick=AddButtonText(this.innerHTML)>
+                Weekly and Hourly Earnings</a></li>
+            <li><a href="#" onclick=AddButtonText(this.innerHTML)>
+                National Earnings</a></li>
+            <li><a href="#" onclick=AddButtonText(this.innerHTML)>
+                State and County Earnings</a></li>
+        </ul></div>
+
+    <div class="dropdown"><button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+        Productivity
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+            <li><a href="#" onclick=AddButtonText(this.innerHTML)>
+                Productivity and Costs</a></li>
+            <li><a href="#" onclick=AddButtonText(this.innerHTML)>
+                Multifactor Productivity</a></li>
+            <li><a href="#" onclick=AddButtonText(this.innerHTML)>
+                Industry Productivity</a></li>
+        </ul></div>
+
+    <div class="dropdown"><button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+        Workplace Injuries
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+            <li><a href="#" onclick=AddButtonText(this.innerHTML)>
+                Fatal Occupational Injuries</a></li>
+            <li><a href="#" onclick=AddButtonText(this.innerHTML)>
+                Nonfatal Injuries</a></li>
+            <li><a href="#" onclick=AddButtonText(this.innerHTML)>
+                Occupational Injuries and Illnesses</a></li>
+        </ul></div>
+
+    <div id="datedisplay"><script>document.write("This version is current as of: " + Date())</script></div>
+</div>
+</body>
+</html>

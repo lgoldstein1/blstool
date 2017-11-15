@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="266f63a5-8847-4adf-83a0-10da587270a6" name="drewCS" url="http://cs.drew.edu/~lgoldstein1/bls">
+        <fileTransfer host="cs.drew.edu" port="22" rootFolder="/home/lgoldstein1" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
